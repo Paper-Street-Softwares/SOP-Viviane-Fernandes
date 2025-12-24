@@ -1,34 +1,26 @@
+// vite.config.js
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
 import path from 'path'
-import { createHtmlPlugin } from 'vite-plugin-html'
+
+function nonBlockingCssPlugin() {
+  return {
+    name: 'non-blocking-css',
+    enforce: 'post',
+    transformIndexHtml(html) {
+      return html.replace(
+        /<link rel="stylesheet"([^>]+)>/g,
+        `<link rel="stylesheet"$1 media="print" onload="this.media='all'">`
+      )
+    },
+  }
+}
 
 export default defineConfig({
-  plugins: [
-    react(),
-    createHtmlPlugin({
-      inject: {
-        tags: [
-          {
-            tag: 'link',
-            attrs: {
-              rel: 'preload',
-              as: 'style',
-              href: '/src/index.css',
-              onload: "this.onload=null;this.rel='stylesheet'",
-            },
-            injectTo: 'head',
-          },
-        ],
-      },
-    }),
-  ],
+  plugins: [react(), nonBlockingCssPlugin()],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
     },
-  },
-  optimizeDeps: {
-    include: ['primereact/dialog', 'primereact/button'],
   },
 })

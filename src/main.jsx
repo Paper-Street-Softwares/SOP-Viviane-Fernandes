@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import ReactDOM from 'react-dom/client'
-import 'primereact/resources/themes/lara-light-cyan/theme.css'
+import './styles/utilities.css'
+// import './index.css'
 
 // import content from './content/content.jsx'
 
@@ -15,7 +16,6 @@ import Index from './pages/Index.jsx'
 // import About from "./components/sections/About.jsx";
 // import Faq from "./components/sections/Faq.jsx";
 
-// import './index.css'
 // import Maps from './components/sections/Maps.jsx'
 // import AboutSocial from './components/sections/AboutSocial.jsx'
 // import CartaoSocio from './components/sections/CartaoSocio.jsx'
