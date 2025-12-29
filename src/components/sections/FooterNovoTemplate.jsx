@@ -107,11 +107,14 @@ function FooterNovoTemplate({ mapa }) {
                   </li>
                   <li className="flex items-center gap-3">
                     <Mail className="w-5 h-5 shrink-0 text-black/70" />
-                    <span className="font-secondFont font-light text-paragraph1">
+                    <span className="font-secondFont font-light text-paragraph3 tablet1:text-paragraph1 desktop1:text-paragraph3">
                       {content.texts.infos.emailSecundario}
                     </span>
                   </li>
                 </ul>
+                <p className="my-6 text-paragraph3">
+                  {content.texts.footer.fraseObsFooter}
+                </p>
               </div>
 
               {mapa && (
@@ -131,29 +134,27 @@ function FooterNovoTemplate({ mapa }) {
             </div>
 
             <div className="border-t border-white/10 text-center font-secondFont text-sm text-black/70">
-              <p>&copy; {content.texts.footer.copyrightLine}</p>
-              <br />
-              {/* <p className=" text-sm text-black/70 font-secondFont">
-                {content.texts.footer.pontos.ponto1} •{' '}
-                {content.texts.footer.pontos.ponto2} •{' '}
-                {content.texts.footer.pontos.ponto3}
-              </p> */}
-              <div className="text-sm text-black/70 font-secondFont ">
-                <button
-                  onClick={openDialog}
-                  aria-label="Abre um Modal com os termos da Política de privacidade"
-                  className="underline cursor-pointer"
-                >
-                  Políticas de privacidade
-                </button>{' '}
-                - Desenvolvido com excelência por{' '}
-                <a
-                  target="_blank"
-                  href="https://paperstreet.com.br"
-                  className="underline"
-                >
-                  Paper Street
-                </a>
+              <div className="desktop2:flex gap-8 justify-center">
+                {' '}
+                <p>&copy; {content.texts.footer.copyrightLine}</p>
+                <br />
+                <div className="text-sm text-black/70 font-secondFont ">
+                  <button
+                    onClick={openDialog}
+                    aria-label="Abre um Modal com os termos da Política de privacidade"
+                    className="underline cursor-pointer"
+                  >
+                    Políticas de privacidade
+                  </button>{' '}
+                  - Desenvolvido com excelência por{' '}
+                  <a
+                    target="_blank"
+                    href="https://paperstreet.com.br"
+                    className="underline"
+                  >
+                    Paper Street
+                  </a>
+                </div>
               </div>
             </div>
           </div>
