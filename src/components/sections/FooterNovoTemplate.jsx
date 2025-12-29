@@ -182,5 +182,3 @@ function FooterNovoTemplate({ mapa }) {
 }
 
 export default FooterNovoTemplate
-
-// comentario
