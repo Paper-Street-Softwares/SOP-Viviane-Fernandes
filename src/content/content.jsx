@@ -46,7 +46,7 @@ export const infos = {
   endereco: (
     <div>
       {/* <p>Endereço:</p> */}
-      <p>Campinas - SP</p>
+      <p>São Paulo - SP</p>
     </div>
   ),
   enderecoSecundario: (
@@ -70,7 +70,6 @@ export const infos = {
   linkeDinProfile: '',
   x: '',
   tiktokProfile: '',
-
   whatsappDefaultMessage:
     'Olá! Vim através do site de vocês e gostaria de tirar umas dúvidas.',
   whatsChatDefaultMessage:
@@ -103,7 +102,7 @@ const content = {
       ctaButtonTextResponsive: 'Contato',
     },
     hero: {
-      miniTag: 'ADVOGADA TRIBUTARISTA | ATENDIMENTO NACIONAL',
+      miniTag: 'ADVOGADA TRIBUTARISTA',
       title: (
         <span>
           Transformo a complexidade do Direito em{' '}
@@ -757,6 +756,8 @@ const content = {
       copyrightLine: ` ${currentYear} - ${infos.name} - Todos os direitos reservados`,
       footerDivulgacaoText: 'Gostaria de ter um site como este? Clique aqui',
       midSectionName: 'Até mais',
+      fraseObsFooter:
+        '“Direito não é favor. É instrumento de justiça para quem foi esquecido pelo sistema”',
       footerText:
         'Agradecemos sua visita! Esperamos que em breve você se torne nosso cliente e desfrute de todos os benefícios que oferecemos.',
       footerSocialText: 'Siga a gente nas redes sociais:',
