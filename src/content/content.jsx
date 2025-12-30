@@ -168,8 +168,8 @@ const content = {
       title: (
         <span>
           {' '}
-          Transformo confusão em{' '}
-          <span className="italic text-primary">estratégia</span> clara
+          Minha <span className="italic text-primary">atuação:</span> Estratégia
+          e clareza
         </span>
       ),
       subtitle: 'Clareza para decidir melhor e agir com confiança.',
