@@ -164,7 +164,7 @@ const content = {
       },
     },
     features: {
-      miniTag: 'Minha Atuação: Estratégia e Clareza',
+      miniTag: '',
       title: (
         <span>
           {' '}
